@@ -1,0 +1,22 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+#include <Windows.h>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int a, b, n;
+	cout << "Введіть число" << endl;
+	cin >> n;
+	a = n / 100;
+	b = (n / 10) % 10;
+	n % 10;
+	if ((a > b) && (b > a))
+		cout << "Дане число є парним двозначним" << endl;
+	else if ((b > a) && (a > b))
+		cout << "Дане число є парним двозначним" << endl;
+	else cout << "Hi Nigers" << endl;
+}
